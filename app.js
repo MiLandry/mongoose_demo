@@ -17,6 +17,10 @@ app.engine('html', swig.renderFile);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'html');
 
+//mongoose and data
+var mongoose = require('mongoose');
+mongoose.connect('mongodb://hamsterofdark:Heimd@ll1.o@ds011775.mlab.com:11775/test_database');
+
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 app.use(logger('dev'));
