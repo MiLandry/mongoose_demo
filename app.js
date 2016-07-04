@@ -19,7 +19,7 @@ app.set('view engine', 'html');
 
 //mongoose and data
 var mongoose = require('mongoose');
-mongoose.connect('mongodb://hamsterofdark:Heimd@ll1.o@ds011775.mlab.com:11775/test_database');
+mongoose.connect('mongodb://hamsterofdark:tennis@ds011775.mlab.com:11775/standup_db');
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
