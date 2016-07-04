@@ -15,3 +15,7 @@ exports.create = function(req, res)
 
     res.redirect(301,'/');
 };
+
+exports.getNote = function(req, res)
+{
+};
