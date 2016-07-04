@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 
-var someBizObjSchema = new Schema({
+var standupSchema = new Schema({
     memberName: String,
     project: String,
     workYesterday: String,
@@ -11,5 +11,7 @@ var someBizObjSchema = new Schema({
     createdOn: {type: Date, default : Date.now}
 });
 
+//export model..
+module.exports = mongoose.model('standupSchema', standupSchema);
 
 
