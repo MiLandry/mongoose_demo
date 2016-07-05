@@ -4,7 +4,7 @@ var standupCtrl = require('../controllers/standup.server.controllers');
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  return standupCtrl.list(req, res);
 });
 
 /* GET New Note page. */
